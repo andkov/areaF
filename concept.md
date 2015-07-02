@@ -9,6 +9,9 @@ The key quantitative property of a statistical model is **misfit**: the discrepa
 ![prototype3](./libs/images/prototype3.png)
 
 
+![prototype2](./libs/images/prototype2.png)
+
+![prototype1](./libs/images/prototype1.png)
 
 
 |   | Restricted  | Full  |
