@@ -60,5 +60,5 @@ summod$coefficients
 
 
 # load areaF function
-source("https://raw.githubusercontent.com/andkov/psy532/master/scripts/graphs/areaF_graphing.R")
+source("https://raw.githubusercontent.com/andkov/areaF/master/scripts/areaF_graphing.R")
 areaF(EF, dfF, ER, dfR )
