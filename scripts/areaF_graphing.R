@@ -115,8 +115,8 @@ F_text <- function(d){
                                    df_label, " = ",  df_value, "  ", 
                                    MS_label, " = ",  MS_value)),
                      hjust=0)
-  g <- g + geom_text(aes(x=0, y = 1, label = label1 ),hjust=0)
-  g <- g + geom_text(aes(x=0, y = 0, label = label2 ),hjust=0)
+  g <- g + geom_text(aes(x=0, y = 1, label = label1 ),hjust=0, size=baseSize-2)
+  g <- g + geom_text(aes(x=0, y = 0, label = label2 ),hjust=0, size=baseSize-2)
   g <- g + scale_color_manual(values=areaFcolors)
   g <- g + main_theme
   g <- g + theme(axis.text.y =  element_blank(),
