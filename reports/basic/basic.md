@@ -33,6 +33,9 @@
 
 <!-- Tweak the datasets.   -->
 
+```r
+# @kntir basic_table ---------------------------------------
+```
 
 
 
@@ -41,6 +44,11 @@
 
 <!-- Basic graph view.   -->
 
+```r
+# use function defined in ./scripts/areaF_graphing.R
+# areaF(EF, dfF, ER, dfR )
+# areaF(6136.292, 26, 6525, 29 )
+```
 
 
 

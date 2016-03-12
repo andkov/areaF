@@ -10,8 +10,12 @@ library(tidyr) # for data manipulation
 library(extrafont) # for customm theme
 
 # @knitr load_sources --------------------------------------- 
-source("https://raw.githubusercontent.com/andkov/psy532/master/scripts/graphs/main_theme.R") # cosmetics
-source("https://raw.githubusercontent.com/andkov/areaF/master/scripts/areaF_graphing.R") # graph-making
+# source("https://raw.githubusercontent.com/andkov/psy532/master/scripts/graphs/main_theme.R") # cosmetics
+source("./scripts/main_theme.R")
+# source("https://raw.githubusercontent.com/andkov/areaF/master/scripts/areaF_graphing.R") # graph-making
+source("./scripts/areaF_graphing.R")
+
+
 
 # source("./scripts/graphs/main_theme.R") # cosmetics
 # source("./scripts/areaF_graphing.R") # graph-making
@@ -61,12 +65,17 @@ ds <- X
 # @knitr basic_graph ---------------------------------------
 # use function defined in ./scripts/areaF_graphing.R
 # areaF(EF, dfF, ER, dfR )
-areaF(6136.292, 26, 6525, 29 )
+# areaF(6136.292, 26, 6525, 29 )
 # @knitr new_chunk ---------------------------------------
 
-
-
-
+# 
+# 
+# rm(list=ls(all=TRUE)) # clear environment
+# cat("\f") # clear console
+# library(ggplot2) # load ggplot2 package for graphing
+# # load areaF function
+source("./scripts/graphs/areaF_graphing.R")
+areaF(6136, 26, 6525, 29 )
 
 
 

@@ -13,6 +13,7 @@ The key quantitative property of a statistical model is **misfit**: the discrepa
 |Sum of Squared Error  | SST  | SSE |
 |Mean Squared Error   | MST   | MSE   |
 
+This visual display of ANOVA tables contain comparison of two models:  Null or Restricted (producing SSTotal) and Full or Saturated (SSError). 
 
 ![prototype3](./libs/images/prototype3.png)
 
@@ -20,7 +21,6 @@ The key quantitative property of a statistical model is **misfit**: the discrepa
 ![prototype2](./libs/images/prototype2.png)
 
 ![prototype1](./libs/images/prototype1.png)
-
 
 
 ### Re-create in R
@@ -34,4 +34,4 @@ source("https://raw.githubusercontent.com/andkov/psy532/master/scripts/graphs/ar
 areaF(6136, 26, 6525, 29 )
 ```
 
-ANOVA tables contain comparison of two models:  Null or Restricted (producing SSTotal) and Full or Saturated (SSError). 
+![demonstration](./reports/basic/figure_rmd/basic_graph-1.png)
