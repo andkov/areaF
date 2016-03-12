@@ -24,7 +24,7 @@ covariances <- diag(varstds) %*% correlations %*% diag(varstds)
 
 # generate data using Steiger's custom functions
 X <- MakeExactData(varmeans, covariances, N)
-colnames(X)<-varnames; rownames(X)<-c(1:N) # label columns and rows
+colnames(X) <- varnames; rownames(X) <- c(1:N) # label columns and rows
 X <- data.frame(X) # create dataframe
 summary(X) # gets basic descriptives of data
 cor(X) # output correlations
