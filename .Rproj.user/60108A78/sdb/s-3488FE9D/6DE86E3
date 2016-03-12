@@ -1,0 +1,17 @@
+{
+    "contents" : "Geometric representation of Model Comparison\n---\n\nareaF is a visual display of ANOVA table, comparing and contrasting the properties of restricted (basic, null) and full(saturated, alternative) models.\n\n## Concept Art\n\nThe key quantitative property of a statistical model is **misfit**: the discrepancy between model prediction and  observed data. We identify  this quantity as the \"Sum of Squares\" (implying model error), \"SS\" for short. The misfit of the simpler, restricted model, will be called **SST**, \"T\" standing for \"Total\" (to imply the baseline). The error of the more complex, full model will be called **SSE**, \"E\" standing for \"Error\" (to emphasize our focus on the FULL model).  These values are in squared units, so it is natural to concieve of them as areas.\n\n| Used abbreviations        | Restricted  | Full  |\n|---|---|---|\n|  | Total  | Error   |\n|Sum of Squared Error  | SST  | SSE |\n|Mean Squared Error   | MST   | MSE   |\n\nThis visual display of ANOVA tables contain comparison of two models:  Null or Restricted (producing SSTotal) and Full or Saturated (SSError). \n\n![prototype3](./libs/images/prototype3.png)\n\n\n![prototype2](./libs/images/prototype2.png)\n\n![prototype1](./libs/images/prototype1.png)\n\n\n### Re-create in R\nQuick graphs of model comparison. Copy/past the following script in R console and execute to produce the graph: \n```\nrm(list=ls(all=TRUE)) # clear environment\ncat(\"\\f\") # clear console\nlibrary(ggplot2) # load ggplot2 package for graphing\n# load areaF function\nsource(\"https://raw.githubusercontent.com/andkov/psy532/master/scripts/graphs/areaF_graphing.R\")\nareaF(6136, 26, 6525, 29 )\n```\n\n![demonstration](./reports/basic/figure_rmd/basic_graph-1.png)",
+    "created" : 1457745465268.000,
+    "dirty" : false,
+    "encoding" : "UTF-8",
+    "folds" : "",
+    "hash" : "223981309",
+    "id" : "6DE86E3",
+    "lastKnownWriteTime" : 1457746745,
+    "path" : "~/GitHub/areaF/README.md",
+    "project_path" : "README.md",
+    "properties" : {
+    },
+    "relative_order" : 2,
+    "source_on_save" : false,
+    "type" : "markdown"
+}

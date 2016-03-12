@@ -1,0 +1,17 @@
+{
+    "contents" : "rm(list=ls(all=TRUE)) #Clear the memory of variables from previous run. This is not called by knitr, because it's above the first chunk.\n\n# ---- load-sources ------------------------------------------------------------\n#Load any source files that contain/define functions, but that don't load any other types of variables\n#   into memory.  Avoid side effects and don't pollute the global environment.\nsource(\"http://statpower.net/Content/312/R%20Stuff/Steiger%20R%20Library%20Functions.txt\")\nsource(\"https://raw.githubusercontent.com/andkov/psy532/master/scripts/graphs/main_theme.R\") # cosmetics\nsource(\"https://raw.githubusercontent.com/andkov/areaF/master/scripts/areaF_graphing.R\") # graph-making\n# source(\"./scripts/main_theme.R\")\n# source(\"./scripts/areaF_graphing.R\")\n\n# ---- load-packages -----------------------------------------------------------\nlibrary(ggplot2) #For graphing\n# library(magrittr) #Pipes\nrequireNamespace(\"knitr\")\nrequireNamespace(\"scales\") #For formating values in graphs\nrequireNamespace(\"RColorBrewer\")\n# requireNamespace(\"dplyr\")\nrequireNamespace(\"plyr\")\nrequireNamespace(\"tidyr\")\nrequireNamespace(\"extrafont\")\n# requireNamespace(\"reshape2\") #For converting wide to long\n# requireNamespace(\"mgcv, quietly=TRUE) #For the Generalized Additive Model that smooths the longitudinal graphs.\n\n# ---- declare-globals ---------------------------------------------------------\noptions(show.signif.stars=F) #Turn off the annotations on p-values\n\npath_input <- \"./data-phi-free/derived/motor-trend-car-test.rds\"\n# ---- load-data ---------------------------------------------------------------\nds <- readRDS(path_input) # 'ds' stands for 'datasets'\n\n# ---- tweak-data --------------------------------------------------------------\n\n\n# ---- graphs ------------------------------------------------------------------\n",
+    "created" : 1457747813024.000,
+    "dirty" : true,
+    "encoding" : "UTF-8",
+    "folds" : "",
+    "hash" : "1364499995",
+    "id" : "4AB83377",
+    "lastKnownWriteTime" : 1456974860,
+    "path" : "~/GitHub/areaF/reports/report-1/report-1.R",
+    "project_path" : "reports/report-1/report-1.R",
+    "properties" : {
+    },
+    "relative_order" : 3,
+    "source_on_save" : false,
+    "type" : "r_source"
+}
